@@ -1,0 +1,15 @@
+zero = "You are lucky in this year,..."
+one = "You are normal this year,..."
+two = "You are unlucky this year,..."
+year = eval(input('Birth year'))
+month = eval(input('Birth month'))
+day = eval(input('Birthday'))
+sum = year + month + day
+mod = sum % 3
+print("Lucky Star Horoscope")
+if mod == 0:
+    print(zero)
+elif mod == 1:
+    print(one)
+elif mod == 2:
+    print(two)
